@@ -39,6 +39,11 @@ struct ContentView: View {
                 
             Spacer()
             
+            Rectangle()
+                
+                
+                .padding()
+            
             Image(systemName: imageMiddle)
                 .resizable()
                 .padding(.all)
