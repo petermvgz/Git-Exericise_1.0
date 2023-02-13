@@ -46,7 +46,7 @@ struct ContentView: View {
                 .scaledToFit()
                 .foregroundColor(Color(red: 0.0, green: 50.0, blue: 50.0, opacity: 10.0))
             Spacer()
-            Text("Version 1.2")
+            Text("Version 1.1")
                 .font(.largeTitle)
                 .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
