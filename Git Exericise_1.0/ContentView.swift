@@ -19,8 +19,8 @@ struct BlueButton: ButtonStyle {
 // created struct that conforms to the ButtonStyle protocol so we get the BlueButton style
 
 struct ContentView: View {
-    @State private var imageName1 = "swift"
-    @State private var imageName2 = "globe"
+    @State private var imageTop = "swift"
+    @State private var imageMiddle = "globe"
     // @State (property wrapper) will store a value in an area of memory where it can be changed (muated)
     // It will not be destroyed when a view is recreated
     // When the value stored by a @State varible changes, any views depending on that @State value will be re-created
@@ -28,26 +28,28 @@ struct ContentView: View {
     // IF YOU NEED TO CHANGE A VARIBLE THATS SPECIFIC TO A SINGLE VIEW, USE @State
     var body: some View {
         VStack {
-            Image(systemName: imageName1)
+            Image(systemName: imageTop)
                 .imageScale(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
                 .scaleEffect(3)
                 .frame(width:80.0, height: 80.0)
                 .foregroundColor(.orange)
             
             Text("Welcome to Git")
-                .fontWeight(.regular)
+                .fontWeight(.medium)
+                
             Spacer()
             
-            Image(systemName: imageName2)
+            Image(systemName: imageMiddle)
                 .resizable()
                 .padding(.all)
                 .imageScale(.small)
                 .scaledToFit()
                 .foregroundColor(Color(red: 0.0, green: 50.0, blue: 50.0, opacity: 10.0))
             Spacer()
-            Text("Version 1.0")
+            Text("Version 1.2")
                 .font(.largeTitle)
                 .fontWeight(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             Spacer()
             Button("Continue"){
                 
